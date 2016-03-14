@@ -1,0 +1,32 @@
+<div class="container">
+	<h1 class="text-danger"><span class="fa fa-plus"></span> Create Repository</h1>
+	<hr/>
+	<br/>
+	
+	
+	
+	<br/><br/>
+	<div class="panel panel-primary" >
+		<div class="panel-heading">Create Repository</div>
+		<div class="panel-body">
+			<form role="form" >
+			    <div class="form-group">
+			      <label for="repo" class="control-label">Repository Name:</label>
+			      <input type="text" class="form-control"  ng-model="user.repository" placeholder="Repository Name">
+			    </div>
+			    <div class="form-group">
+			      <label for="desc">Description:</label>
+			      <textarea  class="form-control" ng-model="user.description" placeholder="Description"></textarea>
+			    </div>
+			    <div class="form-group">
+			      <label for="url" class="control-label">Home Page:</label>
+			      <input type="text" class="form-control col-xs-4"  ng-model="user.homepage" placeholder="Home Page">
+			     </div>
+			    <div class="form-group">
+			    <button type="button" class="btn btn-danger fa fa-github" ng-click="createRepository(user)"> Create Repository</button>
+			    </div>
+			</form>
+		</div>
+	</div>
+
+</div>
